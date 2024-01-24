@@ -21,28 +21,135 @@
 
             <Grid Grid.Column="0" Margin="0">
                 <StackPanel>
-                    <Label Content="Windmoller&#10;Holscher" HorizontalAlignment="Center" FontSize="35"></Label>
+                    <Label Content="Learner's " HorizontalAlignment="Center" FontSize="35" Margin="0 33 0 0 "></Label>
                     <StackPanel Margin="20 50 20 50">
-                        <Label Content="Types" FontSize="30" Margin="0 0 0 30"></Label>
-                        <Label Content="Modules" FontSize="30" Margin="0 0 0 30"></Label>
-                        <Label Content="Functions" FontSize="30" Margin="0 0 0 30"></Label>
-                        <Label Content="Equipment" FontSize="30" Margin="0 0 0 30"></Label>
+                        <StackPanel Orientation="Horizontal" >
+                            <Image Source="https://img.icons8.com/ios/50/1A1A1A/control-panel--v2.png"/>
+                            <Label Content="Dashboard" FontSize="25" Margin="0 0 0 30"></Label>
+                        </StackPanel>
+
+                        <Label Content="Resources" FontSize="25" Margin="0 0 0 30"></Label>
+                        <Label Content="Settings" FontSize="25" Margin="0 0 0 30"></Label>
+                        <Label Content="Help" FontSize="25" Margin="0 0 0 30"></Label>
                     </StackPanel>
                 </StackPanel>
 
             </Grid>
-            <Grid Grid.Column="1">
+            <Grid Grid.Column="1" Background="#fafafa">
 
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="10*"/>
                     <RowDefinition Height="15*"/>
-                    <RowDefinition Height="55*"/>
+                    <RowDefinition Height="30*"/>
+                    <RowDefinition Height="35*"/>
                     <RowDefinition Height="20*"/>
                 </Grid.RowDefinitions>
 
+                <Grid>
+                    <StackPanel Orientation="Horizontal" >
+                        <Label Content="Dashboard" FontSize="25" Margin="10 40 380 0" FontWeight="Bold"></Label>
+                        <Label Content="24 Jan 2024, Wednesday" FontSize="25" Margin="0 40 100 0" ></Label>
+                    </StackPanel>
+                </Grid>
+
+                <Grid Grid.Row="1">
+                    <StackPanel Orientation="Horizontal">
+
+                        <Grid>
+                            <Border BorderThickness="0" CornerRadius="10,10,10,10" Background="#eff8ff" Margin="10">
+                            </Border>
+
+                            <!-- StackPanel to contain TextBlock and ProgressBar -->
+                            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Left" Margin="20 0 100 0" >
+
+                                <!-- TextBlock with White Foreground -->
+                                <TextBlock Text="Welcome Back Jatin!" Foreground="Black" FontSize="25" HorizontalAlignment="Left" FontWeight="SemiBold" Margin="20 10 0 0 "/>
+                                <TextBlock Text="You have learned 80% of your goal this week!" Foreground="Black" FontSize="20" HorizontalAlignment="Left" Margin="20 10 0 10 "/>
+                                <TextBlock Text="Keep it up and imporve your results" Foreground="Black" FontSize="20" HorizontalAlignment="Left" Margin="20 0 0 10 "/>
+
+                            </StackPanel>
+                        </Grid>
+                        
+                        <Image Margin="20 0 0 0 " Source="https://i.pinimg.com/1200x/7f/98/02/7f9802af9537f3231ba27012c0ae6b7d.jpg"/>
+                    </StackPanel>
+
+                    
+                </Grid>
+
+                <Grid Grid.Row="2" >
+                    
+                        <StackPanel Orientation="Horizontal" >
+                        <Grid Margin="20 0 20 0" Width="180">
+                            <Border BorderThickness="0" CornerRadius="10,10,10,10" Background="#ffffff"></Border>
+
+                            <!-- StackPanel to contain TextBlock and ProgressBar -->
+                            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10 0 10 0">
+
+                                <!-- TextBlock with White Foreground -->
+                                <TextBlock Text="Types" Foreground="Black" FontSize="25" HorizontalAlignment="Left" FontWeight="SemiBold" Margin="10 10 0 0 "/>
+                                <TextBlock Text="1. MIRAFLEX " Foreground="Black" FontSize="20" HorizontalAlignment="Left" Margin="10 10 0 10 "/>
+                                <TextBlock Text="2. VISTAFLEX" Foreground="Black" FontSize="20" HorizontalAlignment="Left" Margin="10 0 0 10 "/>
+                                <TextBlock Text="3. HELIOSTAR" Foreground="Black" FontSize="20" HorizontalAlignment="Left" Margin="10 0 0 10 "/>
+                                <TextBlock Text="4. HELIOSTAR G" Foreground="Black" FontSize="20" HorizontalAlignment="Left" Margin="10 0 0 10 "/>
+                                <TextBlock Text="5. DYNASTAR" Foreground="Black" FontSize="20" HorizontalAlignment="Left" Margin="10 0 0 10 "/>
+
+                            </StackPanel>
+                        </Grid >
+                        <Grid Margin="0 0 20 0" Width="180">
+                            <Border BorderThickness="0" CornerRadius="10,10,10,10" Background="#ffffff"></Border>
+
+                            <!-- StackPanel to contain TextBlock and ProgressBar -->
+                            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10 0 10 0" >
+
+                                <!-- TextBlock with White Foreground -->
+                                <TextBlock Text="Modules" Foreground="Black" FontSize="25" HorizontalAlignment="Left" FontWeight="SemiBold" Margin="10 10 0 0 "/>
+                                <TextBlock Text="1. Basis " Foreground="Black" FontSize="20" HorizontalAlignment="Left" Margin="10 10 0 10 "/>
+                                <TextBlock Text="2. ProControl" Foreground="Black" FontSize="20" HorizontalAlignment="Left" Margin="10 0 0 10 "/>
+                                <TextBlock Text="3. PLC Drive" Foreground="Black" FontSize="20" HorizontalAlignment="Left" Margin="10 0 0 10 "/>
+                                <TextBlock Text="4. Image" Foreground="Black" FontSize="20" HorizontalAlignment="Left" Margin="10 0 0 10 "/>
+                                <TextBlock Text="5. Vision" Foreground="Black" FontSize="20" HorizontalAlignment="Left" Margin="10 0 0 10 "/>
+
+                            </StackPanel>
+                        </Grid>
+                        <Grid Margin="0 0 20 0" Width="180">
+                            <Border BorderThickness="0" CornerRadius="10,10,10,10" Background="#ffffff"></Border>
+
+                            <!-- StackPanel to contain TextBlock and ProgressBar -->
+                            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10 0 10 0">
+
+                                <!-- TextBlock with White Foreground -->
+                                <TextBlock Text="Functions" Foreground="Black" FontSize="25" HorizontalAlignment="Left" FontWeight="SemiBold" Margin="10 10 0 0 "/>
+                                <TextBlock Text="1. Turbo" Foreground="Black" FontSize="20" HorizontalAlignment="Left" Margin="10 10 0 10 "/>
+                                <TextBlock Text="2. Image" Foreground="Black" FontSize="20" HorizontalAlignment="Left" Margin="10 0 0 10 "/>
+                                <TextBlock Text="3. Bedienung" Foreground="Black" FontSize="20" HorizontalAlignment="Left" Margin="10 0 0 10 "/>
+                                <TextBlock Text="4. überarbeiten" Foreground="Black" FontSize="20" HorizontalAlignment="Left" Margin="10 0 0 10 "/>
+                                <TextBlock Text="5. Hilfetexte" Foreground="Black" FontSize="20" HorizontalAlignment="Left" Margin="10 0 0 10 "/>
+
+                            </StackPanel>
+                        </Grid>
+                        <Grid Margin="0 0 20 0" Width="180">
+                            <Border BorderThickness="0" CornerRadius="10,10,10,10" Background="#ffffff"></Border>
+
+                            <!-- StackPanel to contain TextBlock and ProgressBar -->
+                            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10 0 10 0">
+
+                                <!-- TextBlock with White Foreground -->
+                                <TextBlock Text="Equipments" Foreground="Black" FontSize="25" HorizontalAlignment="Left" FontWeight="SemiBold" Margin="10 10 0 0 "/>
+                                <TextBlock Text="1. Müsse wews" Foreground="Black" FontSize="20" HorizontalAlignment="Left" Margin="10 10 0 10 "/>
+                                <TextBlock Text="2. Material" Foreground="Black" FontSize="20" HorizontalAlignment="Left" Margin="10 0 0 10 "/>
+                                <TextBlock Text="3. Bedienung" Foreground="Black" FontSize="20" HorizontalAlignment="Left" Margin="10 0 0 10 "/>
+                                <TextBlock Text="4. Abgeschalt" Foreground="Black" FontSize="20" HorizontalAlignment="Left" Margin="10 0 0 10 "/>
+                                <TextBlock Text="5. NIRs bei" Foreground="Black" FontSize="20" HorizontalAlignment="Left" Margin="10 0 0 10 "/>
+
+                            </StackPanel>
+                        </Grid>
+                    </StackPanel>
+                    
+
+                </Grid>
+
                 <Grid Grid.Row="3">
                     <StackPanel Orientation="Horizontal">
-                        <Grid Margin="50 0 0 0">
+                        <Grid Margin="20 0 20 0">
                             <Border BorderThickness="0" CornerRadius="10,10,10,10" Background="#6694ec" Margin="0 0 0 0" Height="100" Width="230"/>
 
                             <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
@@ -50,7 +157,7 @@
                             </StackPanel>
 
                         </Grid>
-                        <Grid Margin="50 0 0 0">
+                        <Grid Margin="40 0 0 0">
                             <Border BorderThickness="0" CornerRadius="10,10,10,10" Background="#ffa07a" Margin="0 0 0 0" Height="100" Width="230"/>
 
                             <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
@@ -58,7 +165,7 @@
                             </StackPanel>
 
                         </Grid >
-                        <Grid Margin="50 0 0 0">
+                        <Grid Margin="40 0 0 0">
                             <Border BorderThickness="0" CornerRadius="10,10,10,10" Background="#708090" Margin="0 0 0 0" Height="100" Width="200"/>
 
                             <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
@@ -68,9 +175,9 @@
                         </Grid>
                     </StackPanel>
                 </Grid>
-                
+
             </Grid>
-            <Grid Grid.Column="2" Margin="0 0 0 20">
+            <Grid Grid.Column="2" Margin="20">
 
                 <Grid.RowDefinitions>
                     <RowDefinition Height="15*"/>
@@ -80,9 +187,9 @@
                     <RowDefinition Height="15*"/>
                 </Grid.RowDefinitions>
 
-                <Grid >
+                <Grid>
                     <StackPanel Orientation="Horizontal">
-                        <Label Content="Your Profile" FontSize="25" Margin="0 40 100 0" FontWeight="Bold"></Label>
+                        <Label Content="Your Profile" FontSize="25" Margin="0 50 70 0" FontWeight="Bold"></Label>
                         <Button Content="Logout" FontSize="20" Width="80" Height="50">
                             <Button.Resources>
                                 <Style TargetType="{x:Type Border}">
@@ -102,7 +209,7 @@
                     </StackPanel>
                 </Grid>
                 <Grid Grid.Row="2">
-                    <Border BorderThickness="0" CornerRadius="10,10,10,10" Background="#eff8ff" Margin="0 0 10 10"/>
+                    <Border BorderThickness="0" CornerRadius="10,10,10,10" Background="#eff8ff" Margin="0 0 0 10"/>
 
                     <!-- StackPanel to contain TextBlock and ProgressBar -->
                     <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
@@ -115,7 +222,7 @@
                     </StackPanel>
                 </Grid>
                 <Grid Grid.Row="3">
-                    <Border BorderThickness="0" CornerRadius="10,10,10,10" Background="#fff0f5" Margin="0 0 10 10">
+                    <Border BorderThickness="0" CornerRadius="10,10,10,10" Background="#fff0f5" Margin="0 0 0 10">
                     </Border>
 
                     <!-- StackPanel to contain TextBlock and ProgressBar -->
@@ -129,7 +236,7 @@
                     </StackPanel>
                 </Grid>
                 <Grid Grid.Row="4">
-                    <Border BorderThickness="0" CornerRadius="10,10,10,10" Background="#fff4ee" Margin="0 0 10 10">
+                    <Border BorderThickness="0" CornerRadius="10,10,10,10" Background="#fff4ee" Margin="0 0 0 10">
                     </Border>
 
                     <!-- StackPanel to contain TextBlock and ProgressBar -->
